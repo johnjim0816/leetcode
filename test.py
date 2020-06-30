@@ -5,11 +5,13 @@
 @Email: johnjim0816@gmail.com
 @Date: 2020-06-28 10:10:06
 @LastEditor: John
-@LastEditTime: 2020-06-28 10:10:29
+@LastEditTime: 2020-06-30 09:18:51
 @Discription: 
 @Environment: python 3.7.7
 '''
-a=[]
-a.insert(0,[1])
-a.insert(0,[2])
-print(a)
+var = 5                   
+while var > 0:              
+   var = var -1
+   if var == 3:
+      pass
+   print('当前变量值 :', var)

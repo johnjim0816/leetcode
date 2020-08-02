@@ -3,25 +3,43 @@
 '''
 @Author: John
 @Email: johnjim0816@gmail.com
-@Date: 2020-05-11 17:56:21
+@Date: 2020-08-02 14:35:13
 @LastEditor: John
-@LastEditTime: 2020-05-21 16:42:39
+@LastEditTime: 2020-08-02 14:38:09
 @Discription: 
-@Environment: python 3.7.7
+@Environment: 
 '''
-#
-# @lc app=leetcode.cn id=15 lang=python3
-#
-# [15] 三数之和
-#
+# Source : https://leetcode.com/problems/3sum/
+# Author : JohnJim0816
+# Date   : 2020-08-02
 
-# @lc code=start
+##################################################################################################### 
+#
+# Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find 
+# all unique triplets in the array which gives the sum of zero.
+# 
+# Note:
+# 
+# The solution set must not contain duplicate triplets.
+# 
+# Example:
+# 
+# Given array nums = [-1, 0, 1, 2, -1, -4],
+# 
+# A solution set is:
+# [
+#   [-1, 0, 1],
+#   [-1, -1, 2]
+# ]
+# 
+#####################################################################################################
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         
         n=len(nums)
         ans=[]
-        if(not nums or n<3):
+        if(not nums or n<3): # 特判
             return []
         nums.sort()
         ans=[]
@@ -46,6 +64,3 @@ class Solution:
                 else:
                     L=L+1
         return ans
-
-# @lc code=end
-

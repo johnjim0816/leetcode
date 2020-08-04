@@ -3,27 +3,42 @@
 '''
 @Author: John
 @Email: johnjim0816@gmail.com
-@Date: 2020-06-28 10:14:36
+@Date: 2020-08-02 14:18:01
 @LastEditor: John
-@LastEditTime: 2020-06-28 10:19:25
+@LastEditTime: 2020-08-02 14:18:41
 @Discription: 
-@Environment: python 3.7.7
+@Environment: 
 '''
-#
-# @lc app=leetcode.cn id=103 lang=python3
-#
-# [103] 二叉树的锯齿形层次遍历
-#
+# Source : https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+# Author : JohnJim0816
+# Date   : 2020-08-02
 
-# @lc code=start
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
+##################################################################################################### 
+#
+# Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left 
+# to right, then right to left for the next level and alternate between).
+# 
+# For example:
+# Given binary tree [3,9,20,null,null,15,7],
+# 
+#     3
+#    / \
+#   9  20
+#     /  \
+#    15   7
+# 
+# return its zigzag level order traversal as:
+# 
+# [
+#   [3],
+#   [20,9],
+#   [15,7]
+# ]
+# 
+#####################################################################################################
 class Solution:
+    ''' 在102题的基础上，加上深度奇偶判断，
+    '''
     def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
         """广度优先搜索
         :type root: TreeNode
@@ -51,5 +66,3 @@ class Solution:
             if level:
                 res.append(level)
         return res
-# @lc code=end
-

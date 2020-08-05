@@ -1,6 +1,9 @@
+# [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
 最近公共祖先的定义： 设节点 root 为节点 p, q的某公共祖先，若其左子节点root.left和右子节点 root.right 都不是 p,q的公共祖先，则称 root是 “最近的公共祖先” 。
 
 根据以上定义，若 root是 p, q的 最近公共祖先 ，则只可能为以下情况之一：
+
 * p 和 q 在 root的子树中，且分列 root的 异侧（即分别在左、右子树中）;
 * p = root ，且 q 在 root 的左或右子树中；
 * q = root ，且 p 在 root 的左或右子树中；

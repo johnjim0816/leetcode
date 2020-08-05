@@ -55,6 +55,6 @@ package-lock.json
 node_modules/*
 
 *.code-workspace
-.DS_Store
+**/.DS_Store
 Desktop.ini
 __pycache__

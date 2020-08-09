@@ -36,3 +36,4 @@ Output: 28
 * 1 <= m, n <= 100
 * It's guaranteed that the answer will be less than or equal to 2 * 10 ^ 9.
 
+![image-20200810062846469](assets/image-20200810062846469.png)

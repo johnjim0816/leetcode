@@ -1,6 +1,10 @@
-# [394. 字符串解码](https://leetcode-cn.com/problems/decode-string/)
+# [394. Decode String](https://leetcode.com/problems/decode-string/)
+
+有点类似于前缀表达式
 
 ## 辅助栈法
+
+考虑3[a2[b]]等嵌套情况用栈最方便，然后需要考虑连续整数出现的情况如32[a]
 
 ```python
 class Solution:

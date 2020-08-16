@@ -10,6 +10,12 @@
 
 [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
+[75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+
+[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
+
+[523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
+
 ## hash_table
 
 [1. Two Sum](https://leetcode.com/problems/two-sum/)
@@ -17,6 +23,8 @@
 [15. 3Sum](https://leetcode.com/problems/3sum/)
 
 [18. 4Sum](https://leetcode.com/problems/4sum/)
+
+[523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
 
 ## depth_first_search
 

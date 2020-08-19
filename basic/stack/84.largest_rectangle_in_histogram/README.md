@@ -1,0 +1,45 @@
+# [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+
+## 简单枚举
+
+可以枚举矩形的宽和高来计算，如果枚举宽度，可以固定宽度w(最大为heights的长度)，然后使用嵌套循环枚举矩形的左右边界，矩形的高就是所有包含的柱子的最小高度。
+
+如果枚举高度，选定某根柱子将其高度h作为整个矩形的高，然后左右扩展，根据木桶理论，如果左右扩展时高度比h小的柱子就是其边界，然后就可以求出面积了。
+
+这边会有一个小问题就是如果该左边的柱子高度都大于h，那么似乎就没有边界了，此时可以设为-1，注意数组首项下标为0，同理右边界最大为heights的最大下标+1
+
+<img src="assets/image-20200819110444915.png" alt="image-20200819110444915" style="zoom:50%;" />
+
+## 单调栈+枚举高
+
+对于枚举高的思路，如果只是简单粗暴的枚举需要二重循环，时间复杂度为O(n^2)，而我们可以结合单调栈做到一重循环求边界，
+
+这里可以看官解的示例，左遍历得到各柱子的左边界，然后从右向左遍历得到右边界
+
+<img src="assets/image-20200819111303766.png" alt="image-20200819111303766" style="zoom:50%;" />
+
+```python
+class Solution:
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        n = len(heights)
+        left, right = [0] * n, [0] * n
+
+        mono_stack = list()
+        for i in range(n):
+            while mono_stack and heights[mono_stack[-1]] >= heights[i]:
+                mono_stack.pop()
+            left[i] = mono_stack[-1] if mono_stack else -1
+            mono_stack.append(i)
+        
+        mono_stack = list()
+        for i in range(n - 1, -1, -1):
+            while mono_stack and heights[mono_stack[-1]] >= heights[i]:
+                mono_stack.pop()
+            right[i] = mono_stack[-1] if mono_stack else n
+            mono_stack.append(i)
+ 
+        ans = max((right[i] - left[i] - 1) * heights[i] for i in range(n)) if n > 0 else 0
+        return ans
+
+```
+

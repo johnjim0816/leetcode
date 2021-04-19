@@ -1,46 +1,16 @@
-# 每天一道leetcode
+# 个人的leetcode刷题记录
 
-[![作者](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-KyonHuang-7AD6FD.svg)](https://johnjim0816.github.io/)
+## 怎么刷leetcode
 
-写在这里的都是精选题
+![preview](assets/v2-58b8892ba8db8bb452db88ec329e1dcd_r.jpg)
 
-## array
+[怎么刷leetcode](https://www.zhihu.com/question/280279208)
 
-[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
+[LeetCode按照怎样的顺序来刷题比较好？](https://www.zhihu.com/question/36738189/answer/1240179104)
+推荐九章算法的回答
 
-[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+[algorithm-pattern](https://greyireland.gitbook.io/algorithm-pattern/)
 
-[75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+[如何正确高效地使用LeetCode？](https://www.zhihu.com/question/26580300)
 
-[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
-
-[523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
-
-## hash_table
-
-[1. Two Sum](https://leetcode.com/problems/two-sum/)
-
-[15. 3Sum](https://leetcode.com/problems/3sum/)
-
-[18. 4Sum](https://leetcode.com/problems/4sum/)
-
-[523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
-
-## depth_first_search
-
-[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
-
-[463. Island Perimeter](https://leetcode.com/problems/island-perimeter/)
-
-[695.岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
-
-## greedy
-
-[55. Jump Game](https://leetcode.com/problems/jump-game/)
-
-[45. Jump Game II](https://leetcode.com/problems/jump-game-ii/)
-
-### 维护
-
-本文档由 [yuki](https://github.com/bighuang624/yuki) 维护
-
+[leetcode笔记](https://mnmunknown.gitbooks.io/algorithm-notes/content/)

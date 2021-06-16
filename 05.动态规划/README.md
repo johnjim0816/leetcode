@@ -1,5 +1,9 @@
 Refs
 
+https://oi-wiki.org/dp/
+
+https://maomaoalgo.gitbook.io/python/hui-su-yu-dong-tai-gui-hua
+
 [背包问题九讲](https://github.com/tianyicui/pack/blob/master/V2.pdf)
 
 

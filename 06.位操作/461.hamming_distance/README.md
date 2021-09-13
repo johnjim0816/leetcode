@@ -1,1 +1,4 @@
-# [461. Hamming Distance](https://leetcode.com/problems/hamming-distance/)
+## 性质
+
+a^0=a，a^a=0，见[136. 只出现一次的数字-简](./136. 只出现一次的数字-简.md)
+
